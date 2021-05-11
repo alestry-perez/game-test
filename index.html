@@ -9,10 +9,16 @@
       integrity="sha512-/gO16YMp20RIqCZXZyvMlzALQqEoiDU0akshw25wFiXCRGl+0p/HPWkOd8HWFn6bnatGhxakGLfYhWaPPVQIyA=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://github.com/ngokevin/aframe-physics-components/blob/master/dist/aframe-physics-components.min.js"></script>
     <title>Game Test</title>
   </head>
   <body>
-    <a-scene>
+    <a-scene physics-world="gravity: 0 -9.8 0">
+      <a-entity
+        physics-body="boundingBox: 1 1 1; mass: 5; velocity: 0.2 0 0"
+        geometry="primitive: box"
+        material="color: red"
+      ></a-entity>
       <a-sky color="pink">
         <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
         <a-sphere
