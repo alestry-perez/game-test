@@ -16,9 +16,11 @@
     <title>Section 1A</title>
   </head>
   <body>
-    <a-scene embedded arjs">
+    <a-scene embedded arjs>
       <a-marker type="pattern" url="./images/pattern-LOGO.patt" smooth="true">
-        <a-box material="color: blue;"> </a-box>
+        <a-entity
+          fbx-model=”src: url('./images/Sitting.fbx');” >
+        </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
