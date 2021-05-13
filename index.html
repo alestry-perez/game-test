@@ -13,12 +13,12 @@
       integrity="sha512-Vwmkm1QOtdVNLuwkxaXXyB/aBY0lZvI4NTv+83gs+pU0HuZ2j3inyfgpMpJHYRS0O3PoHEhO6mKomMYBKXRMWw=="
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Section 1A</title>
   </head>
   <body>
-    <a-scene embedded arjs>
-      <a-marker preset="hiro">
-        <a-box position="0 0.5 0" material="color: red;">
+    <a-scene embedded arjs="patternRatio: 0.75;">
+      <a-marker type="pattern" url="./images/pattern-LOGO1.patt" smooth="true">
+        <a-box position="0 0.5 0" material="color: blue;">
           <a-animation
             attribute="rotation"
             dur="3000"
