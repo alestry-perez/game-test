@@ -8,7 +8,6 @@
       content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.2.0/aframe.min.js"></script>
-    <script src='https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js'></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/ar.js/2.2.2/aframe-ar.min.js"
       integrity="sha512-Vwmkm1QOtdVNLuwkxaXXyB/aBY0lZvI4NTv+83gs+pU0HuZ2j3inyfgpMpJHYRS0O3PoHEhO6mKomMYBKXRMWw=="
@@ -17,11 +16,9 @@
     <title>Section 1A</title>
   </head>
   <body>
-    <a-scene embedded arjs>
+    <a-scene embedded arjs">
       <a-marker type="pattern" url="./images/pattern-LOGO.patt" smooth="true">
-        <a-entity
-          fbx-model=”src: url('./images/Sitting.fbx');” >
-        </a-entity>
+        <a-box></a-box>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
