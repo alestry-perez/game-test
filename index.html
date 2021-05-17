@@ -15,15 +15,17 @@
     ></script>
     <title>Section 1A</title>
   </head>
-  <body>
-    <a-scene embedded arjs">
-      <a-marker preset=’hiro’>
-        <a-entity 
-            obj-model=”obj: url(/images/model.obj); 
-            mtl: url(/images/material.mtl)”>
-        </a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
+  <body style=’margin : 0px; overflow: hidden;’>
+    <a-scene embedded arjs=’sourceType: webcam;’>
+      <a-assets>
+        <a-asset-item id="tesse-obj" src="./images/model.obj"></a-asset-item>
+        <a-asset-item id="tesse-mtl" src="./images/materials.mtl"></a-asset-item>
+      </a-assets>
+        <a-marker preset=’hiro’>
+          <a-entity obj-model="obj: #tesse-obj; mtl: #tesse-mtl"></a-entity>
+        </a-marker>
+    <a-entity camera>
+    </a-entity>
     </a-scene>
   </body>
 </html>
